@@ -3,7 +3,7 @@ footer {
 }
 
 #imgFooter {
-    width: 10%;
+    width: calc(10% + .5vw);
     height: auto;
     padding: 5px;
 }
