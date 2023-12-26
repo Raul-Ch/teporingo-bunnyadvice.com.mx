@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Error 404
+{% endblock %}
+
+{% block styles %}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <img src="{{ url_for('static', filename='img/ErrorNotFound.jpg') }}" class="mx-auto d-block img-fluid" />
+</div>
+{% endblock %}
