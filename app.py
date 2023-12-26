@@ -2,11 +2,12 @@ from flask import Flask, flash, redirect, render_template, request, session, url
 from functools import wraps
 import csv, random
 import os  # Don't forget to import os
+from googletrans import Translator
 
 # Configure application
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def index():
     return render_template("index.html")
 
@@ -31,6 +32,10 @@ def DailyBunnyQuote():
         random_quote = random.choice(quotes)
 
     return render_template("DailyBunnyQuote.html", quote=random_quote['quote'], author=random_quote['author'])
+
+@app.route('/<path:path>')
+def catch_all(path):
+    return render_template("Error404.html")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
