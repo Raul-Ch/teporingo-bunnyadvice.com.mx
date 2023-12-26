@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    DB Quote
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/DailyBunnyQuote.css') }}" />
+{% endblock %}
+
+{% block content %}
+</br>
+</br>
+<!-- Quote -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="card text-center p-3 ">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h2 id="TitleDB"><span class="CapitalTitle">D</span>aily <span class="CapitalTitle">B</span>unny</h2>
+          </div>
+        </div>
+        <blockquote class="blockquote mb-0">
+          <i>
+            <p id="quote">{{ quote }}</p>
+          </i>
+          </br>
+          <b>
+            <footer class="blockquote-footer">Author: <cite title="Source Title" id="author">{{ author }}</cite></footer>
+          </b>
+        </blockquote>
+        <div class="card-img-overlay">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</br></br>
+{% endblock %}
