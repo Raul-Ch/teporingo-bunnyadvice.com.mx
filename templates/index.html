@@ -5,7 +5,11 @@
 {% endblock %}
 
 {% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Index.css') }}" />
 {% endblock %}
 
 {% block content %}
+<div class="container">
+    <div><img id="MayanTeporingo" clas="img-fluid" src="{{ url_for('static', filename='img/MayanTeporingo.svg') }}" /></div>
+  </div>
 {% endblock %}
