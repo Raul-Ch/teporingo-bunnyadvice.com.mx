@@ -11,6 +11,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #915f50 !important;
+  /* background-color: #883e3e; /* Use !important to ensure this rule takes precedence ALTERNATIVE*/
 }
 
 #HomeTitle{
