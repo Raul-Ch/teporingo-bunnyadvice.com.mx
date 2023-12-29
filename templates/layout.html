@@ -102,18 +102,20 @@
   </div>
   </nav>
 
-  {% block content %}{% endblock %}
+  <div style="flex-grow: 1;">
+    {% block content %}{% endblock %}
+</div>
 </body>
 
 <!-- Footer -->
-<footer class="bg-dark">
+<footer class="bg-dark" id="Footer">
   <div id="footer-container" class="container">
     <div id="row-container" class="row">
       <div class="col-md-4 text-center">
         <img src="{{ url_for('static', filename='img/Icon_Bunny_MoonA.png') }}" alt="Footer Image" id="imgFooter">
       </div>
       <div class="col-md-4 text-center">
-        <h2 id="Footer">Teporingo</h2>
+        <h2 id="Footertext">Teporingo</h2>
       </div>
       <div class="col-md-4 text-center">
         <!-- Social Media Icons/Links Here -->

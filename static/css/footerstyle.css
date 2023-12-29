@@ -1,3 +1,7 @@
+#Footer {
+    width: 100%;
+}
+
 #imgFooter {
     width: calc(10% + .5vw);
     height: auto;
@@ -8,7 +12,7 @@
     padding: 7px;
 }
 
-#Footer {
+#Footertext {
     font-family: 'HannieBunny' !important;
     font-weight: 150%;
     color: #FFFFFF;
