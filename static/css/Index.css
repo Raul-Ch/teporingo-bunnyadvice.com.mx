@@ -18,6 +18,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  border-radius: 100%;
 }
 
 .moon-bunny {
@@ -33,13 +34,14 @@
   background-size: 80%;
   background-position: center;
   width: 100%;
-  height:  100%;
+  height: 100%;
   pointer-events: none;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   z-index: 4;
+  border-radius: 100%;
 }
 
 /* .leaves {
@@ -59,10 +61,10 @@
   height: 100%;
 } */
 
-#authorvideo{
-    font-family: 'HannieBunny', sans-serif;
-    font-size: 200%;
-    text-align: right;
+#authorvideo {
+  font-family: 'HannieBunny', sans-serif;
+  font-size: calc(30px + 1vw);
+  text-align: right;
 }
 
 #authorvideo a {
@@ -71,15 +73,74 @@
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
+
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 2s; 
+  animation-duration: 2s;
   animation-fill-mode: both;
+}
+
+#Teporingopoly {
+  height: calc(100px + 20vw);
+  opacity: 0;
+  animation: popIn 2s forwards;
+  shape-outside: circle(55%);
+  float: left;
+}
+
+#Teporingopoly:hover {
+  transform: translateY(-30px);
+}
+
+#Teporingopoly2 {
+  width: auto;
+  height: calc(100px + 20vw);
+  opacity: 0;
+  animation: popIn 2s forwards;
+  shape-outside: circle(50%);
+  float: left;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.Intro {
+  font-size: calc(15px + 2vw) !important;
+  font-family: 'Bunny';
+  color: black;
+  text-align: center;
+}
+
+.TeporingoInfo {
+  font-size: calc(8px + 1vw);
+  font-family: 'Urbanist';
+  color: #000000;
+  opacity: 0;
+  animation: popIn 2s forwards;
+}
+
+.TeporingoInfo strong {
+  font-size: calc(12px + 1.5vw);
+  font-family: 'Bunny';
+  text-align: left;
+  position: relative;
+  top: 2px; /* Adjust as needed */
+}
+
+.description {
+  color: rgb(54, 54, 54);
+}
+
+.TeporingoInfo:hover .description {
+  color: black;
 }

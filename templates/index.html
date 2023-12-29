@@ -10,20 +10,74 @@ Home
 
 {% block content %}
 <br>
+<div class="container">
+    <div class="row" class="Intro">
+        <p class="Intro">Hello and welcome to Teporingo Bunny Advice!!</p>
+        <p class="Intro"> First I'd like to introduce the main inspiration for this project,
+            the Teporingo:</p>
+    </div>
+</div>
+
+<div class="container" id="BunnyInfo">
+    <div class="image-container">
+        <img id="Teporingopoly" src="{{ url_for('static', filename='img/Teporingopoly.png') }}">
+    </div>
+    <p class="TeporingoInfo"><strong>Name: </strong><span class="description">Teporingo, also known as the Volcano
+            Rabbit</span></p>
+    <p class="TeporingoInfo"><strong>Size: </strong><span class="description">23 to 31 cm (among the smallest rabbits
+            in the world!)</span></p>
+    <p class="TeporingoInfo"><strong>Weight: </strong><span class="description">380 to 602 grams</span></p>
+    <p class="TeporingoInfo"><strong>Habitat: </strong><span class="description">Endemic to the high-altitude regions of
+        Mexico, particularly around the volcanoes</span></p>
+    <p class="TeporingoInfo"><strong>Conservation Status: </strong><span class="description">Classified as endangered
+        /
+        Mostly Extinct</span></p>
+</div>
+<br>
+</div>
+
+<br>
 <div class="container text-center fadeIn">
-    <h1>Want to see a story?:<br>
-        THE LEGEND OF THE MOON RABBIT </h1>
+    <h1 class="Intro">Want to see a story?:<br> THE LEGEND OF THE MOON RABBIT </h1>
 </div>
 <div class="container video-container fadeIn">
-    <div class="containeroverlay">    </div>
-        <iframe class="moon-bunny" src="https://www.youtube-nocookie.com/embed/hM1XKh05KkU?si=jyXhbh4P-JgRx9yZ"
+    <div class="containeroverlay"> </div>
+    <iframe class="moon-bunny" src="https://www.youtube-nocookie.com/embed/hM1XKh05KkU?si=jyXhbh4P-JgRx9yZ"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen onerror="this.innerHTML='Video not available, check internet connection.'"></iframe>
 </div>
 <div class="container fadeIn">
-    <p id="authorvideo"><a href="https://www.youtube.com/@DrawTheLifeTikTak">Draw The Life TikTak</a> <br></h1>
+    <p id="authorvideo"><a href="https://www.youtube.com/@DrawTheLifeTikTak">By: Draw The Life TikTak</a> <br></h1>
 </div>
+
+
+<div>
+    <div class="container" id="BunnyInfo2">
+        <div class="image-container2">
+            <img id="Teporingopoly2" src="{{ url_for('static', filename='img/Teporingopoly.png') }}">
+        </div>
+        <p class="TeporingoInfo"><strong>Feeding Habits:</strong><span class="description">Herbivore: grasses and
+            herbs</span></p>>
+        <p class="TeporingoInfo"><strong>Unique Adaptations:</strong><span class="description">Dense coat against the
+                cold</span></p>
+        <p class="TeporingoInfo"><strong>Curiosity:</strong><span class="description">Helps spreading seeds and weeding
+                out
+                bad grasses</span></p>
+        <p class="TeporingoInfo"><strong>Family:</strong><span class="description">Groups of 2 up to 5</span></p>
+        <p class="TeporingoInfo"><strong>Life expectancy:</strong><span class="description">From 7 to 9 years in the
+                wild
+                and 12 in captivity</span></p>
+        <p class="TeporingoInfo"><strong>Predators:</strong><span class="description">Weasels, coyotes, foxes, snakes,
+                dogs;
+                MOST DANGEROUS:
+                HUMANS</span></p>
+    </div>
+</div>
+
+
+<br><br>
+{% endblock %}
 
 <!-- <div class="container" id="video" style="position: relative">
     <div class="row">
@@ -43,7 +97,3 @@ Home
         src="{{ url_for('static', filename='img/framejungle.svg') }}" />
     </div> 
 </div>-->
-
-
-<br><br>
-{% endblock %}
