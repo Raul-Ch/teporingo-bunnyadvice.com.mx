@@ -1,14 +1,10 @@
-footer {
-    margin-top: auto;
-}
-
 #imgFooter {
     width: calc(10% + .5vw);
     height: auto;
     padding: 5px;
 }
 
-#row-container{
+#row-container {
     padding: 7px;
 }
 
@@ -30,12 +26,14 @@ footer {
     margin-top: 6px;
     margin-bottom: 4px;
 }
-    #Author a {
-        color: #FFFFFF;
-    }
 
-.social_media img{
-    width: 20px; /* adjust as needed */
+#Author a {
+    color: #FFFFFF;
+}
+
+.social_media img {
+    width: 20px;
+    /* adjust as needed */
     height: auto;
     margin-right: 15px;
 }

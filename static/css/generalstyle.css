@@ -10,10 +10,17 @@
 body {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #915f50,  #ffffff)
-  /* min-height: 100vh; */
+  background: linear-gradient(to bottom, #915f50,  #ffffff);
    /*  background-color: #915f50 !important; */
   /* background-color: #883e3e; /* Use !important to ensure this rule takes precedence ALTERNATIVE*/
+}
+
+main {
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 1;
 }
 
 #HomeTitle{
@@ -23,9 +30,4 @@ body {
 
 .noSelectable {
   user-select: none !important;
-}
-
-html {
-  overflow-y: scroll;
-  
 }

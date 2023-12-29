@@ -1,9 +1,36 @@
 #MayanTeporingo {
-    width: 25vw; 
-    height: auto; 
-    border-radius: 20%;
-    border-color: none;
-  }
+  width: 25vw;
+  height: auto;
+  border-radius: 20%;
+  border-color: none;
+}
+
+#MoonBunny{
+  min-height: 50%;
+  min-width: auto;
+  height: 100%;
+  width: 100%;
+}
+
 #video {
-    background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
-  }
+  background-color: rgba(0, 0, 0, 0.5);
+  /* black with 50% opacity */
+  background-image: url("/static/img/Jungleleaves.jpg");
+  background-size: cover;
+}
+
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  /* for 16:9 aspect ratio */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
