@@ -4,3 +4,6 @@
     border-radius: 20%;
     border-color: none;
   }
+#video {
+    background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  }
