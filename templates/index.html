@@ -10,22 +10,40 @@ Home
 
 {% block content %}
 <br>
-<div class="container" id="video">
+<div class="container text-center fadeIn">
+    <h1>Want to see a story?:<br>
+        THE LEGEND OF THE MOON RABBIT </h1>
+</div>
+<div class="container video-container fadeIn">
+    <div class="containeroverlay">    </div>
+        <iframe class="moon-bunny" src="https://www.youtube-nocookie.com/embed/hM1XKh05KkU?si=jyXhbh4P-JgRx9yZ"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen onerror="this.innerHTML='Video not available, check internet connection.'"></iframe>
+</div>
+<div class="container fadeIn">
+    <p id="authorvideo"><a href="https://www.youtube.com/@DrawTheLifeTikTak">Draw The Life TikTak</a> <br></h1>
+</div>
+
+<!-- <div class="container" id="video" style="position: relative">
     <div class="row">
-
-        <img id="MayanTeporingo" class="img-fluid" src="{{ url_for('static', filename='img/MayanTeporingo.png') }}" />
-
-        <div class="video-wrapper">
+        <div class="col-md-6" style="position: relative">
+            <img id="MayanTeporingo" class="img-fluid"
+                src="{{ url_for('static', filename='img/MayanTeporingo.png') }}" />
+        </div>
+        <div class="col-md-6" style="position: relative">
             <iframe id="MoonBunny" src="https://www.youtube-nocookie.com/embed/hM1XKh05KkU?si=jyXhbh4P-JgRx9yZ"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen onerror="this.innerHTML='Video not available, check internet connection.'"></iframe>
         </div>
-
     </div>
-</div>
-<div class="container">
+   <div class="leaves position-absolute" >
+        <img class="img-fluid" id="jungleframe"
+        src="{{ url_for('static', filename='img/framejungle.svg') }}" />
+    </div> 
+</div>-->
 
-</div>
+
 <br><br>
 {% endblock %}
