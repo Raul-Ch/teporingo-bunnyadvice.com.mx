@@ -90,9 +90,15 @@
 #Teporingopoly {
   height: calc(100px + 20vw);
   opacity: 0;
+  bottom: 0;
+  left: 0;
+  position: relative;
   animation: popIn 2s forwards;
   shape-outside: circle(55%);
   float: left;
+  z-index: 2;
+  border-radius: 25%;
+  padding-right: 50px;
 }
 
 #Teporingopoly:hover {
@@ -101,6 +107,7 @@
 
 #Teporingopoly2 {
   width: auto;
+  position: relative;
   height: calc(100px + 20vw);
   opacity: 0;
   animation: popIn 2s forwards;
@@ -143,4 +150,27 @@
 
 .TeporingoInfo:hover .description {
   color: black;
+}
+
+/* #grass{
+  z-index: 3;
+  border-radius: 25%;
+  height: calc(45px + 7vw);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+ */
+/* #placeholder{
+  /* opacity: 0;
+  height: calc(100px + 20vw);
+  bottom: 0;
+  position: relative;
+  shape-outside: circle(58%);
+  float: left;
+  pointer-events: none;
+} */
+
+#BunnyInfo{
+  position: relative;
 }
