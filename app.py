@@ -19,6 +19,22 @@ def AboutUs():
 def AboutThem():
     return render_template("AboutThem.html")
 
+@app.route("/AboutThem/FoodandNutrition")
+def FoodandNutrition():
+    return render_template("AboutThem/FoodandNutrition.html")
+
+@app.route("/AboutThem/HealthandCare")
+def HealthandCare():
+    return render_template("AboutThem/HealthandCare.html")
+
+@app.route("/AboutThem/Breeds")
+def Breeds():
+    return render_template("AboutThem/Breeds.html")
+
+@app.route("/AboutThem/ItemsandToys")
+def ItemsandToys():
+    return render_template("AboutThem/ItemsandToys.html")
+
 @app.route("/Organizations")
 def Organizations():
     return render_template("Organizations.html")

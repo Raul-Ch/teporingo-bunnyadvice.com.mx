@@ -5,16 +5,23 @@
 }
 
 .AboutUsh2 {
-  font-size: calc(18px + 2.5vw) !important;
+  font-size: calc(18px + 2vw) !important;
   font-family: 'Bunny' !important;
   color: #000000;
 }
 
 .row.AboutUsRow.AboutUsRow {
-  display: flex;
+  align-items: center;
+  display: block;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .row.AboutUsRow.AboutUsRow {
+    display: flex;
+  }
 }
 
 .row.AboutUsRow:nth-child(even) {
@@ -28,14 +35,15 @@
 }
 
 .text p {
-  opacity: 0;
+  opacity: 0.5;
   transition: opacity 0.3s;
 }
 
 .AboutUsp {
-  font-size: calc(10px + 1.5vw) !important;
+  font-size: calc(10px + 1vw) !important;
   font-family: 'Urbanist' !important;
   color: #000000;
+  text-align: justify;
 }
 
 .row.AboutUsRow:hover .text p {
@@ -43,20 +51,23 @@
 }
 
 .image {
-  height: 200px;
-  flex: 1;
-  overflow: hidden;
+  /* flex: 1; */
+  /* overflow: hidden; */
   position: relative;
+  box-sizing: border-box;
 }
 
 .image img {
-  object-fit: cover;
   will-change: transform;
-  transform: scaleX(0);
+  /* transform: scaleX(0); */
   transform-origin: right;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  opacity: 0.5;
+  border-radius: 5%;
+  border: 5px solid rgba(0, 0, 0, 0.5);
 }
 
 .row.AboutUsRow:hover .image img {
-  transform: scaleX(1);
+  /* transform: scaleX(1); */
+  opacity: 1;
 }

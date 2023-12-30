@@ -87,3 +87,7 @@
   .card-link:hover {
     color: inherit; /* Maintain the same color on hover */
   }
+
+  #BunnyInfo2{
+    opacity: 0;
+  }

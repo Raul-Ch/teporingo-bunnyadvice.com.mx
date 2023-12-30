@@ -23,17 +23,17 @@ Home
     <!-- <img id="placeholder" src="{{ url_for('static', filename='img/Teporingopoly.png') }}"> -->
   <!--   <img id="Teporingopoly" src="{{ url_for('static', filename='img/Teporingopoly.png') }}">
     <img id="grass" src="{{ url_for('static', filename='img/grass.png') }}"> -->
-    <img id="Teporingopoly" src="{{ url_for('static', filename='img/teporingograss.png') }}">
-    <p class="TeporingoInfo"><strong>Name: </strong><span class="description">Teporingo, also known as the Volcano
+    <img id="Teporingopoly" src="{{ url_for('static', filename='img/miniteporingo.png') }}">
+    <p class="TeporingoInfo"><!--<strong> -->Name: <!--</strong>--><span class="description">Teporingo, also known as the Volcano
             Rabbit</span></p>
-    <p class="TeporingoInfo"><strong>Size: </strong><span class="description">23 to 31 cm (among the smallest
+    <p class="TeporingoInfo">Size: <span class="description">23 to 31 cm (among the smallest
             rabbits
             in the world!)</span></p>
-    <p class="TeporingoInfo"><strong>Weight: </strong><span class="description">380 to 602 grams</span></p>
-    <p class="TeporingoInfo"><strong>Habitat: </strong><span class="description">Endemic to the high-altitude
+    <p class="TeporingoInfo">Weight: <span class="description">380 to 602 grams</span></p>
+    <p class="TeporingoInfo">Habitat: <span class="description">Endemic to the high-altitude
             regions of
             Mexico, particularly around the volcanoes</span></p>
-    <p class="TeporingoInfo"><strong>Conservation Status: </strong><span class="description">Classified as
+    <p class="TeporingoInfo">Conservation Status: <span class="description">Classified as
             endangered
             /
             Mostly Extinct</span></p>
@@ -57,28 +57,40 @@ Home
 <div class="container fadeIn">
     <p id="authorvideo"><a href="https://www.youtube.com/@DrawTheLifeTikTak">By: Draw The Life TikTak</a> <br></h1>
 </div>
+<br>
 
-
-<div>
-    <div class="container" id="BunnyInfo2">
-        <p class="TeporingoInfo"><strong>Feeding Habits:</strong><span class="description">Herbivore: grasses and
-                herbs</span></p>>
-        <p class="TeporingoInfo"><strong>Unique Adaptations:</strong><span class="description">Dense coat against the
-                cold</span></p>
-        <p class="TeporingoInfo"><strong>Curiosity:</strong><span class="description">Helps spreading seeds and weeding
-                out
-                bad grasses</span></p>
-        <p class="TeporingoInfo"><strong>Family:</strong><span class="description">Groups of 2 up to 5</span></p>
-        <p class="TeporingoInfo"><strong>Life expectancy:</strong><span class="description">From 7 to 9 years in the
-                wild
-                and 12 in captivity</span></p>
-        <p class="TeporingoInfo"><strong>Predators:</strong><span class="description">Weasels, coyotes, foxes, snakes,
-                dogs;
-                MOST DANGEROUS:
-                HUMANS</span></p>
+<div class="container text-center fadeIn">
+    <div class="row">
+        <button class="card-link" data-toggle="collapse" data-target="#BunnyInfo2" aria-controls="BunnyInfo2">
+            <div class="card">
+                <h1 class="Intro">Want to know more about the Teporingo?:</h1>
+                <br>
+                <h1 class="Intro">CLICK ME!</h1>
+            </div>
+        </button>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="collapse" id="BunnyInfo2">
+        <p class="TeporingoInfo">Feeding Habits: <span class="description">Herbivore: grasses and herbs</span></p>
+        <p class="TeporingoInfo">Unique Adaptations: <span class="description">Dense coat against the cold</span></p>
+        <p class="TeporingoInfo">Curiosity: <span class="description">Helps spreading seeds and weeding out bad grasses</span></p>
+        <p class="TeporingoInfo">Family: <span class="description">Groups of 2 up to 5</span></p>
+        <p class="TeporingoInfo">Life expectancy: <span class="description">From 7 to 9 years in the wild and 12 in captivity</span></p>
+        <p class="TeporingoInfo">Predators:  <span class="description">Weasels, coyotes, foxes, snakes, dogs; MOST DANGEROUS: HUMANS</span></p>
+        <img id="MayanTeporingo" src="{{ url_for('static', filename='img/MayanTeporingo.jpg') }}">
     </div>
 </div>
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <br><br>
 {% endblock %}
 
