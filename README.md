@@ -1,15 +1,16 @@
 # teporingo-bunnyadvice.com.mx
 #### Video Demo:  <URL HERE>
 #### Description:
-Introduction about the creator (Me):
+## Introduction about the creator (Me):
 Hi, my name is Raul Chimal Hernandez and I'm a 22 years old Computer Science Student from Mexico,
 I'm months apart (well half a year) from receiving my Bachelor's Degree, but you are not here to know and read about me.
 Might as well continue presenting my project .... MY PROJECT: teporingo-bunnyadvice.com.mx!!!! (accessible from: https://teporingo-bunnyadvice-com.onrender.com/)
 
-Context About Webpage: Let's start from the beginning, in CS50 we were asked to make a final project, I thought about a CV on a webpage for me or a gym webpage for myself, or ...  wait, why would I do it for myself?, yes, of course, I could do that, but do I really want to do a final project for myself instead of something for the world?, why was I being selfish with my knowledge. At that turning point I really knew 2 things: 
-1.- I really wanted to do something for someone else as my project. 
-2.- I doing it on Html and Css (I'm Doing a Website) 
-3 (and secret).- I don't really love doing websites
+## Context About Webpage: 
+Let's start from the beginning, in CS50 we were asked to make a final project, I thought about a CV on a webpage for me or a gym webpage for myself, or ...  wait, why would I do it for myself?, yes, of course, I could do that, but do I really want to do a final project for myself instead of something for the world?, why was I being selfish with my knowledge. At that turning point I really knew 2 things: 
+- 1.- I really wanted to do something for someone else as my project. 
+- 2.- I doing it on Html and Css (I'm Doing a Website) 
+- 3 (and secret).- I don't really love doing websites
 
 Teporingo-bunnyadvice-com forged from the love and care I've experienced these last 10 years, being a bunny owner, friend, and career, I've experienced everything, from anger, stress, and sadness to joy, laughs, and love, and being "exotic pets", the negative parts of the last mentioned experiences are pretty hard.
 I know there are a lot of Facebook pages, groups, webpages, and articles that talk about and cover bunny care, health, and worries.
