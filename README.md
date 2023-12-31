@@ -79,7 +79,7 @@ when someone messes up with the URL, and as I already said, each one has its own
 ## 3.- app.py
 Its a pretty simple and easy app.py, at the top, are the imports I need, then the call to app, each function loading each HTML, and the page that uses Python as I previously said its Daily Quote, a small Python reader to fetch the quote from the csv of quotes, it was really simple and grateful to migrate from javascript to python to load the quotes, the comparison in line of quotes it's incredible, also to import them to the html with Jinga was simpler than the traditional way of Html and Javascript.
 
-## 4.-requiremnts: 
+## 4.- Requirements: 
 In the requirements we have the main imports that we need, I tried to implement googletrans to translate my webpage from English to Spanish, but I didn't want to use Google Translate API as it had a small test period and I didn't want that after it expired some parts of the page broke as I didn't know where and if the webpage was going to be qualified by cs50 staff
 
 Thats pretty much a rough resume of this website, I could extend more and write in detail, but I think I covered the most important things as I also didn't want to make this very long, I know CS50 encourages you to write in detail about each part but I prevented my self to really entering in detail mainly because the language barrier (me not writing correctly or expressing myself the same way as If I'd write in Spanish, but as a matter of fact I did the whole website in English and not in Spanish, to make me practice it more) and also I think that too much detail will bore the reader.
