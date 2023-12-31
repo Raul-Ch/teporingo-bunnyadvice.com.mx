@@ -5,9 +5,39 @@ Breeds
 {% endblock %}
 
 {% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/AboutThemLists.css') }}" />
+{% endblock %}
 
+{% block body_attributes %}
+data-bs-spy="scroll" data-bs-target="#list-org" data-bs-offset="0"
 {% endblock %}
 
 {% block content %}
-
+<br>
+<div class="content" id="ContainerFandN">
+    <div class="row">
+      <div class="col-3">
+        <div id="list" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-item-1">Breeds: Under Construction</a>
+        </div>
+      </div>
+      <div class="col-9 textbody">
+        <div class="scrollspy">
+          <h4 class="list-item-title" id="list-item-1">Breeds</h4>
+          <p class="Listsp">
+            Discover various breeds of pets, their characteristics, and considerations for choosing the
+                            right one for you.
+          </p>
+        </div>
+      </div>
+    </div>
+    <video autoplay loop muted>
+        <source src="{{ url_for('static', filename='img/BunnyBreeds.mp4') }}" type="video/mp4">
+    </video> 
+</div>
+      <br>
+      <div class="text-center">
+        <a class="author" href="https://www.vecteezy.com/video/22658859-group-of-healthy-lovely-rabbits-eating-food-on-nature-background"  target="_blank">Group of healthy lovely   rabbits eating food on nature background. Stock Videos by Vecteezy</a>
+    </div>
+    <br>
 {% endblock %}

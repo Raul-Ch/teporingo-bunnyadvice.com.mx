@@ -5,9 +5,96 @@ Food & Nutrition
 {% endblock %}
 
 {% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/AboutThemLists.css') }}" />
+{% endblock %}
 
+{% block body_attributes %}
+data-bs-spy="scroll" data-bs-target="#list-org" data-bs-offset="0"
 {% endblock %}
 
 {% block content %}
+<br>
+<div class="content" id="ContainerFandN">
+    <div class="row">
+        <div class="col-3">
+            <div id="list" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Main Diet</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">80% Hay</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">10% Greens (1 or 3 cups):</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">5% Pellets (1/4 or 1/2 cups):</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-5">0 to 5% Treats (about 1 to 2
+                    Tbsp):</a>
+            </div>
+        </div>
+        <div class="col-9 textbody">
+            <div class="scrollspy">
+                <h4 class="list-item-title" id="list-item-1">Main Diet</h4>
+                <p class="Listsp">
+                    Bunny diet is quite simple, it consists of the following:<br></p>
+                <h4 class="list-item-title" id="list-item-2">80% Hay</h4>
+                <p class="Listsp1"> It's supposed to let your bunny eat an unlimited amount of Hay (It's even
+                    recommended to leave hay where they do their needs to eat while they poop).
+                    Hay should always be provided to your bunny since it helps maintain healthy teeth, and gut flora
+                    and prevents fur blockage. Hay also promotes an entertainment source of activity, that can reduce
+                    boredom.
+                </p><br>
+                <p class="Listsp2"> “Health Issues from Lack of Hay: The most common bunny health problems are
+                    gastrointestinal issues and dental disease. Improper nutrition is often the key contributing factor
+                    in each of these and many other widespread problems. Feeding 75-80% hay is preventative health
+                    care.”
+                    <br>(House of Rabbit Society)
+                </p>
 
+                <h4 class="list-item-title" id="list-item-3">10% Greens (1 or 3 cups):</h4>
+                <p class="Listsp1"> Incorporating a variety of veggies in your bunnies diet is important. These veggies
+                    complement your bunnies feeding experience by offering different kinds of textures and flavors in
+                    alongside critical nutrients as moisture content enrich bunny kidney and bladder functions.
+                    Houseplant leaves should not be given to bunnies as many of them are harmful. Visit the dedicated
+                    page of the <a href="http://www.allearssac.org/badplants.html" target="_blank"
+                        rel="noopener">Sacramento House Rabbit Society's page</a><br> (Choose pesticide-free fresh
+                    vegetables wherever possible, and make sure to thoroughly wash everything before feeding)
+                </p><br>
+                <p class="Listsp2">"There are three general varieties of produce available for bunnies to eat: leafy
+                    greens (divided into those low in oxalates and those that are high), non-leafy green vegetables, and
+                    fruits and treats. Different quantities of each type may be offered to your bunny daily."
+                    <br>(House of Rabbit Society)
+                </p>
+
+                <h4 class="list-item-title" id="list-item-4">5% Pellets (1 / 4 or 1 / 2 cups):</h4>
+                <p class="Listsp1">In order to ensure that your bunny is getting the correct proportion of calories,
+                    vitamins, minerals, as well as essential fatty acids, choose pellets that are low in protein and
+                    high in fiber <b>(at least 18%)</b>.
+                    <br> Notes: It's necessary to moderate pellet intake in older bunnies to avoid
+                    obesity and other health problems also watch that these do not have extra "treats" added, as
+                    these might cause gastric issues, pellets should never include any additional ingredients like as
+                    grains, peas, or seeds. 
+                    <br>Cosideration: To avoid spoiling, always buy fresh pellets and don't buy more than six
+                    weeks worth.
+                </p><br>
+                <!-- <p class="Listsp2">
+                    <br>(House of Rabbit Society)
+                </p> -->
+
+                <h4 class="list-item-title" id="list-item-5">0-5% Treats (about 1 to 2 Tbsp):</h4>
+                <p class="Listsp1">Treats are a wonderful support, but moderation is essential, keep away of sugary treats since too much sugar can cause bad bacteria to overgrow in the gut, resulting in problems like uncomfortable gas and hypomotility.  Despite their branding, store-bought bunny treats can include excessive levels of sugar and harmful fats, examine the ingredients carefully to be sure.
+                    Being that, organic fruits are a great alternative, but contain more sugar, so choose them selectively, try giving preference to pesticide-free fruits and vegetables, and wash them well before consuming. Most importantly, never give your bunny "human treats" and make sure their food is consistently balanced, with an emphasis on hay and veggies.
+                </p><br>
+                <p class="Listsp2">"Fruits and hay biscuits make great training treats! You might choose to hand-feed this portion of the diet as part of developing a close bond with your bunny, say as a way to encourage bunny to come when you call or to sit beside you"
+                    <br>(House of Rabbit Society)
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <video autoplay loop muted>
+        <source src="{{ url_for('static', filename='img/BunnyEating.mp4') }}" type="video/mp4">
+    </video>
+</div>
+<br>
+<div class="text-center">
+    <a class="author" href="https://www.vecteezy.com/video/26439205-black-and-white-bunny-eating-grass-in-the-garden"
+        target="_blank">Black and white bunny eating grass in the garden Stock Videos by Vecteezy</a>
+</div>
+<br>
 {% endblock %}

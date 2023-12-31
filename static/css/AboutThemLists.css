@@ -1,0 +1,123 @@
+#list{
+    z-index: 2;
+}
+
+.list-group-item{
+    font-size: calc(15px + 2vw) !important;
+    font-family: 'Bunny' !important;
+    color: #000000;
+    z-index: 2;  
+}
+
+.list-item-title{
+    font-size: calc(15px + 2.5vw) !important;
+    font-family: 'Bunny' !important;
+    color: #000000;
+    z-index: 2;
+    text-align: center;
+    z-index: 2;  
+}
+
+.Listsp {
+    font-size: calc(12px + 1.2vw);
+    font-family: 'Urbanist' !important;
+    color: #000000;
+    z-index: 2;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+.Listsp1 {
+    font-size: calc(10px + 1vw);
+    font-family: 'Urbanist' !important;
+    color: #000000;
+    z-index: 2;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+.Listsp2 {
+    font-size: calc(10px + 1vw);
+    font-family: 'Urbanist' !important;
+    color: #000000;
+    z-index: 2;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+#ContainerFandN {
+    position: relative; 
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#ContainerFandN video {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1;
+}
+
+.textbody{
+    position: relative;
+    z-index: 2;   
+    background-color: rgba(255, 255, 255, 0.768);
+}
+
+a.author {
+    font-family: 'HannieBunny', sans-serif;
+    font-size: calc(5px + 1vw);
+    text-align: right;
+    color: black;
+}
+
+a.resources {
+    font-family: 'Bunny', sans-serif;
+    font-size: calc(15px + 2vw) !important;
+    text-align: center;
+    color: black;
+}
+
+.resources {
+    font-family: 'Bunny', sans-serif;
+    font-size: calc(15px + 2vw) !important;
+    text-align: center;
+    color: black;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition properties */
+    --bs-card-border-width: 0 !important;
+    --bs-card-bg: transparent !important;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the parent's color (usually black) */
+    cursor: pointer; /* Change cursor to pointer on hover for better UX */
+    border: none;
+    background-color: transparent;
+  }
+  
+  .card-link:hover {
+    color: inherit; /* Maintain the same color on hover */
+  }
+
+.btn{
+    color: transparent;
+    border: none;
+  }

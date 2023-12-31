@@ -5,9 +5,213 @@ Health & Care
 {% endblock %}
 
 {% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/AboutThemLists.css') }}" />
+{% endblock %}
 
+{% block body_attributes %}
+data-bs-spy="scroll" data-bs-target="#list-org" data-bs-offset="0"
 {% endblock %}
 
 {% block content %}
+<br>
+<div class="content" id="ContainerFandN">
+    <div class="row">
+        <div class="col-3">
+            <div id="list" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Health</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Vaccinations</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Spaying and Neutering</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">General Health</a>
+                <a class="list-group-item list-group-item-action"></a>
+                <a class="list-group-item list-group-item-action" href="#list-item-5">Care</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-6">Training</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-7">Handling </a>
+                <a class="list-group-item list-group-item-action"></a>
+                <a class="list-group-item list-group-item-action"></a>
+                <a class="list-group-item list-group-item-action" href="#list-item-8">Resources</a>
+            </div>
+        </div>
+        <div class="col-9 textbody">
+            <div class="scrollspy">
+                <h4 class="list-item-title" id="list-item-1">Health</h4>
+                <p class="Listsp">
+                    It's challenging to summarize the Health and Care into a single page, so please take the following
+                    recommendations into consideration.
+                    <br>Additionally, seek firsthand counsel from a licensed exotic veterinarian for bunnies.
+                    <br><b>Information on Bunny Health and Issues from the internet should always be regarded as
+                        suggestions rather than facts:</b><br>
+                </p>
+                <h4 class="list-item-title" id="list-item-2">Vaccinations</h4>
+                <p class="Listsp1">The vaccinations that are administered to bunnies vary based on their place of
+                    residence country, some examples of vaccines for bunnies are:
+                <ul>
+                    <li class="Listsp1">Myxomatosis:</li>
+                    <p class="Listsp1">British wild bunnies are highly infected with this virus. The main way that it
+                        spreads is through blood-sucking insects such as mosquitoes, mites, and fleas. </p>
+                    <li class="Listsp1">R(V)HD and R(V)HD2, or Rabbit (Viral) Haemorrhagic Disease:</li>
+                    <p class="Listsp1">Which can infect both domestic and wild bunnies, RHDV, or bunny hemorrhagic
+                        disease, is an extremely contagious and deadly illness. </p>
+                </ul>
+                </p><br>
+                <h4 class="list-item-title" id="list-item-3">Spaying and Neutering</h4>
+                <p class="Listsp1"> Spayed and neutered bunnies live longer and present better health; females are far
+                    less likely to get cancer or reproductive tumors, and males are less hostile. In general, changed
+                    bunnies tend to be more lovable, less disruptive, and easier to train.
+                    Additionally, this process addresses the overpopulation problem, sparing countless abandoned bunnies
+                    from unnecessary suffering and stopping the indiscriminate pet trade.
+                    The ideal period to neuter or spay a pet is between four and six months for females, and eight to
+                    twelve weeks for males after the testicles descend.
+                    <br>However, it's imperative to make sure the procedure is performed by a qualified expert who
+                    handles bunnies.
+                </p><br>
+                <h4 class="list-item-title" id="list-item-4">General Health</h4>
+                <p class="Listsp1"> Providing enough room for bunnies to dig, explore, and engage in recreational
+                    activities like zooming and binkying is an excellent form of exercise for them, give them toys and
+                    games that encourage chewing and exploring to keep their minds engaged, but make sure they stay safe
+                    by
+                    putting up barriers in places they shouldn't chew or dig.
+                    <br>In addition to physical exercise, bunnies need routine medical examinations. Find a veterinarian
+                    who specializes in the bunnies and make regular appointments. It's imperative to keep a
+                    check on the health of their teeth, eyes, and digestive system because bunnies are predisposed to a
+                    number of diseases, so consider that any changes in behavior, including decrease in feeding or
+                    drinking, weird feces or manners, will require to be taken care of by a veterinarian right away.
+                </p><br>
+            </div>
+        </div>
+    </div>
+    <video autoplay loop muted>
+        <source src="{{ url_for('static', filename='img/BunnyHealth.mp4') }}" type="video/mp4">
+    </video>
+</div>
+<br>
+<div class="content" id="ContainerFandN">
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-9 textbody">
+            <div class="scrollspy">
+                <h4 class="list-item-title" id="list-item-5">Care</h4>
+                <p class="Listsp1">Loving bunnies is taking care of them and being aware of their unique needs:
+                <ul>
+                    <li class="Listsp1">Housing :</li>
+                    <p class="Listsp1">Bunnies can live comfortably in enclosed or open areas, (if the area is designed
+                        specifically for them), with plenty of space to run around and guarantee that they get regular
+                        exercise.</p>
+                    <li class="Listsp1">Bunny Proof House</li>
+                    <p class="Listsp1">Create an appropriate environment by proactively taking measures against
+                        potential dangers. just like covering wires with protective coverings or raising them so bunnies
+                        cannot access them.
+                    </p>
+                    <li class="Listsp1">Behavior</li>
+                    <p class="Listsp1">Bunnies can communicate in a variety of ways, by being mindful and respectful of
+                        a bunny's unique language and behavior, you'll be helping them in developing a peaceful and
+                        trustful relationship with you.
+                    </p>
+                </ul>
+                </p><br>
+                <h4 class="list-item-title" id="list-item-6">Training</h4>
+                <p class="Listsp1"> While training a pet bunny takes time and understanding, the rewards are well worth
+                    it. Listed below are some key actions and considerations on bunny training:
+                </p><br>
+                <ul>
+                    <li class="Listsp1">Litter Training: </li>
+                    <p class="Listsp1">As a matter of fact, bunnies are clean pets, and like to keep things "organized",
+                        litter training is fundmental and not too difficult to achieve, with a shallow storage container
+                        and some hay you'll promote litter box habits in bunnies, as they tend to consume hay and
+                        discharge themselves at the same time.
+                        Note: Wood shavings and or cat litter should not be used since they are dangerous to bunnies.
+                    </p>
+                    <li class="Listsp1">Habituate Grooming: </li>
+                    <p class="Listsp1"> As was previously noted, bunnies are naturally clean and self-clean and
+                        self-groom habit animals. However, routine brushing is still required since bunnies have
+                        periodic shedding periods and grooming helps themto remove extra fur, which could cause stomach
+                        issues if consumed.
+                    </p>
+                    <li class="Listsp1">Regular nail trimming: </li>
+                    <p class="Listsp1">Checking bunnies nail growth is very important as potential harm or pain could
+                        originate from overgrow, Cutting your rabbit's nails may seem difficult and a lot of rabbit
+                        owners decide to leave it to their vet. However, frequent trips to the vet can get costly.
+                        <br>
+                        <b>Tips for self-nail clipping:</b>
+                        Once your rabbit is securely bound, find the vein inside the nail, and cut enough to reduce the
+                        nail, however, you should never cut the vein itself, since it is known as the quick and if cut,
+                        the nail will bleed and the bunny will experience pain
+                    </p>
+                </ul>
+                <h4 class="list-item-title" id="list-item-7">Handling</h4>
+                <p class="Listsp1"><b>A rabbit has to be handled with kindness, patience and compassion. </b>
+                    <br>It can be
+                    uncomfortable and dangerous to lift a rabbit by its ears, scruff, legs, or tail and we need to
+                    comprehend that due to their natural food chain position and fragile skeletal structure, rabbits may
+                    resist being lifted. In that case (just when it's required), start by moving carefully towards them, get down on
+                    all fours, and gently lift them up, providing stability for their hindquarters. Handle the rabbit
+                    carefully and if it appears uncomfortable, release it in a secure manner. After being put down, if
+                    it exhibits indications of distress, know that it's only their way of communicating discomfort and
+                    nothing personal.
+                </p><br>
+            </div>
+        </div>
+    </div>
+    <video autoplay loop muted>
+        <source src="{{ url_for('static', filename='img/BunnyHealth2.mp4') }}" type="video/mp4">
+    </video>
+</div>
+<br>
+<div class="container text-center fadeIn">
+    <div class="row">
+        <button class="card-link" data-toggle="collapse" data-target="#BunnyInfo2" aria-controls="BunnyInfo2">
+            <div class="card">
+                <h4 class="list-item-title resources" id="list-item-8">Resources</h4>
+                <h1 class="resources">Want to know more about each Topic?:</h1>
+                <br>
+                <h1 class="resources">CLICK ME!</h1>
+            </div>
+        </button>
+    </div>
+</div>
+<br>
+<div class="container text-center">
+    <div class="collapse" id="BunnyInfo2">
+        <a class="resources"
+        href="https://houserabbit.org/"
+        target="_blank">
+        &#128007; House Rabbit Society: Advocate for the health & care of all domesticated rabbits to be cared as the social & intelligent individuals they are. &#128007;</a>
+        <br>
+        <a class="resources"
+        href="https://myhouserabbit.com/"
+        target="_blank">
+        &#128007; My House Rabbit: Educational website that promotes keeping pet rabbits inside the home. &#128007;</a>
+        <br>
+        <a class="resources"
+        href="http://www.medirabbit.com/EN/index_en.htm"
+        target="_blank">
+        &#128007; MediRabbit: Educative and non-profit website which aim is to share quality information about rabbit medicine. &#128007;</a>
+        <br>
+        <a class="resources"
+        href="https://binkybunny.com/links-to-house-rabbit-resources/"
+        target="_blank">
+        &#128007; Binkybunny links and resources: More Resources!!! &#128007;</a>
+    </div>
+</div>
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<br>
+<div class="text-center">
+    <a class="author"
+        href="https://www.vecteezy.com/video/13468503-young-boy-caucasian-ethnicity-in-a-blue-checkered-shirt-holds-cute-fluffy-domestic-white-bunny-his-arms-slowly-strokes-it-outdoors-in-sunny-weathe-easter-bunny-for-spring-religious-holiday-easter"
+        target="_blank">
+        Videos by Vecteezy</a>
+    <a class="author" target="_blank"
+        href="https://www.vecteezy.com/video/13468498-young-boy-caucasian-ethnicity-in-a-blue-checkered-shirt-holds-cute-fluffy-domestic-white-bunny-his-arms-slowly-strokes-it-outdoors-in-sunny-weathe-easter-bunny-for-spring-religious-holiday-easter">Videos
+        by Vecteezy</a>
+</div>
+<br>
 {% endblock %}

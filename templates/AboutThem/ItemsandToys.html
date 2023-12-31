@@ -5,9 +5,40 @@ Items & Toys
 {% endblock %}
 
 {% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/AboutThemLists.css') }}" />
+{% endblock %}
 
+{% block body_attributes %}
+data-bs-spy="scroll" data-bs-target="#list-org" data-bs-offset="0"
 {% endblock %}
 
 {% block content %}
+<br>
+<div class="content" id="ContainerFandN">
+    <div class="row">
+      <div class="col-3">
+        <div id="list" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-item-1">Items & Toys: Under Construction</a>
+        </div>
+      </div>
+      <div class="col-9 textbody">
+        <div class="scrollspy">
+          <h4 class="list-item-title" id="list-item-1">Items & Toys</h4>
+          <p class="Listsp">
+            Explore a collection of DIY accessories, toys, and essential items for a happy and healthy
+            bunny lifestyle.
+          </p>
 
+        </div>
+      </div>
+    </div>
+    <video autoplay loop muted>
+        <source src="{{ url_for('static', filename='img/BunnyPlaying.mp4') }}" type="video/mp4">
+    </video> 
+</div>
+      <br>
+      <div class="text-center">
+        <a class="author" href="https://pixabay.com/users/tolmachev_alexander-18086370/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=87354"  target="_blank">Video by Alexander Tolmachev from Pixabay</a>
+    </div>
+    <br>
 {% endblock %}
