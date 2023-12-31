@@ -23,29 +23,29 @@ The webpage as a concept not only does contain bunny info for new owners and old
 awareness about our endemic friend the Teporingo, as we must "not only take care and protect the animals we receive in our homes, we need to protect and care about the ones that are outside it and receive us in their home, the planet Earth" 
 
 
-Teporingo-bunnyadvice-com from a Programmer's Perspective:
+## Teporingo-bunnyadvice-com from a Programmer's Perspective:
 Hi! Sorry about the feelings in the last part, I'm not a computer to just compile 1's and 0's, I also compute Love
 Hands down, I really expect you to enjoy this webpage that I myself created and hope you find It useful and good looking.
 
-Let's start from the basics: 
+### Let's start from the basics: 
 Why a webpage? My answer: I don't really love and know how to create one, and I'm not gonna lie I thought it was simpler, guess what, it's not I really like to "put me in the spot", in this experience I do not only learn and feel more comfortable programming WebPages, but I also could appreciate well-designed pages more, learning new things, new challenges, and discover a way to quite literally say: HI WORLD! IM HERE LOOK AT THE THINGS I'M DOING, you can look them up with your phone, tablet or PC it's on the web just visit it
 
-As for why I decided to implement Jinga and Python and not a more traditional HTML, CSS, or JavaScript: 
+### As for why I decided to implement Jinga and Python and not a more traditional HTML, CSS, or JavaScript: 
 (Firstly, I would like to say I'm currently also working on another web project but this time using ASP.NET and W3.CSS and I think it's so much more comfortable and easier than working with app.py and bootstrap.). In a few words, the course contents make you decide between traditional HTML or Python App, and working with ASP.NET I really liked the way code shrinks and looks and acts more efficiently, so It wasn't a big decision to transition the webpage from the traditional to the python way. The best thing about its jinja and the way the HTML loads in app.py, the layout makes the code smaller, which something very importan in HTML as it tends to grow bigger and bigger in each "<div>"
 
-Project Organization:
+## Project Organization:
 The folders and files in the project, follow the "traditional" or "recommended" app.py structure:
-1.- static
-2.- templates
-3.- app.py
-4.- requirements.txt
+- 1.- static
+- 2.- templates
+- 3.- app.py
+- 4.- requirements.txt
 
-1.- STATIC:
+### - 1.- STATIC:
 Here I just made 4 more folders (as I like to have everything organised):
-1.1- CSS
-1.2.- fonts
-1.3.- img
-1.4.- text
+- 1.1- CSS
+- 1.2.- fonts
+- 1.3.- img
+- 1.4.- text
 
 1.1 Css
 This folder contains the CSS for each HTML or template, and also the ones for 4 main important things:
