@@ -1,7 +1,6 @@
 # teporingo-bunnyadvice.com.mx
 #### Video Demo:  <URL HERE>
 #### Description:
-
 Introduction about the creator (Me):
 Hi, my name is Raul Chimal Hernandez and I'm a 22 years old Computer Science Student from Mexico,
 I'm months apart (well half a year) from receiving my Bachelor's Degree, but you are not here to know and read about me.
