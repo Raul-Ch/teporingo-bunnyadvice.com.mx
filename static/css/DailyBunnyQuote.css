@@ -1,10 +1,10 @@
-.blockquote {
+/* .blockquote {
 /*     position: absolute;
     padding: 1px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
-}
+    transform: translate(-50%, -50%); 
+} */
 
 .card {
     background-color: rgba(255, 255, 255, 0.5);

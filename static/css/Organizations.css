@@ -1,4 +1,96 @@
-.list-group-item{
+.img {
+    border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+    #Amcela, #Care{
+        height: 90px;
+        width: auto;
+    }
+}
+
+#Conap{
+    height: 150px;
+    width: auto;
+}
+
+@media (max-width: 1000px) {
+    #Conap, #HouseRabbit{
+        height: 70px;
+        width: auto;
+    }
+}
+
+.card-rounded-left {
+    border-radius: 100px 0 0 100px !important; 
+    overflow: hidden; 
+}
+
+.card-rounded-rigth {
+    border-radius: 0 100px 100px 0 !important; 
+    overflow: hidden;
+}
+
+#OrgsContent{
+    position: relative; 
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.card-title{
+    text-align: center;
+    font-size: calc(15px + 2vw) !important;
+    font-family: 'Bunny' !important;
+}
+
+.left{
+    text-align: left;
+    font-size: calc(12px + 1vw);
+    font-family: 'Urbanist' !important;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.rigth{
+    text-align: right;
+    font-size: calc(12px + 1vw);
+    font-family: 'Urbanist' !important;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.center{
+    text-align: center;
+    font-size: calc(12px + 1vw);
+    font-family: 'Urbanist' !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-link {
+    text-decoration: none !important; /* Remove underline */
+    color: inherit; /* Use the parent's color (usually black) */
+    cursor: pointer; /* Change cursor to pointer on hover for better UX */
+  }
+
+  .card-link:hover {
+    color: inherit; /* Maintain the same color on hover */
+  }
+
+  .bg-dark {
+    --bs-bg-opacity: 0.8 !important; 
+  }
+
+  .white{
+    --bs-card-bg: #ffffff89 !important;
+  }
+    
+/* .list-group-item{
     font-size: calc(15px + 1vw) !important;
     font-family: 'Bunny' !important;
     color: #000000;
@@ -14,4 +106,5 @@
     font-size: calc(10px + 0.5vw) !important;
     font-family: 'Urbanist' !important;
     color: #000000;
-}
+} */
+

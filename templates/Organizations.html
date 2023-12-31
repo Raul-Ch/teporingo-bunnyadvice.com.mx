@@ -1,60 +1,135 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Organizations
+Organizations
 {% endblock %}
 
 {% block styles %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/Organizations.css') }}" />
 {% endblock %}
 
-
-{% block body_attributes %}
-data-bs-spy="scroll" data-bs-target="#list-org" data-bs-offset="0"
-{% endblock %}
-
 {% block content %}
-<br>
-<div class="container">
-    <div class="row">
-      <div class="col-3">
-        <div id="list-org" class="list-group">
-          <a class="list-group-item list-group-item-action" href="#org-item-1">Save the Teporingo</a>
-          <a class="list-group-item list-group-item-action" href="#org-item-2">Bunny Heaven Mexico</a>
-          <a class="list-group-item list-group-item-action" href="#org-item-3">Hoppy Hearts Foundation</a>
-          <a class="list-group-item list-group-item-action" href="#org-item-4">Teporingo Conservation Society</a>
-          <a class="list-group-item list-group-item-action" href="#org-item-5">Bunny Rescue Mexico</a>
-        </div>
-      </div>
-      <div class="col-9">
-        <div class="scrollspy">
-          <h4 class="org-item-title" id="org-item-1">Save the Teporingo</h4>
-          <p class="Organizationsp">
-            Save the Teporingo is dedicated to the conservation and protection of the endangered Mexican rabbit species known as Teporingo. They work towards preserving natural habitats and raising awareness about the importance of Teporingo in the ecosystem.
-          </p>
-
-          <h4 class="org-item-title" id="org-item-2">Bunny Haven Mexico</h4>
-          <p class="Organizationsp">
-            Bunny Haven Mexico is a sanctuary for abandoned and rescued bunnies. They provide a safe and loving environment for bunnies in need, offering medical care, rehabilitation, and opportunities for adoption to ensure every bunny finds a forever home.
-          </p>
-
-          <h4 class="org-item-title" id="org-item-3">Hoppy Hearts Foundation</h4>
-          <p class="Organizationsp">
-            The Hoppy Hearts Foundation focuses on the welfare and well-being of domestic and wild rabbits in Mexico. They run educational programs, promote responsible rabbit ownership, and collaborate with communities to create rabbit-friendly environments.
-          </p>
-
-          <h4 class="org-item-title" id="org-item-4">Teporingo Conservation Society</h4>
-          <p class="Organizationsp">
-            Teporingo Conservation Society is committed to the scientific study and conservation of Teporingo. Through research, habitat preservation, and community engagement, they strive to ensure a sustainable future for this unique Mexican rabbit species.
-          </p>
-
-          <h4 class="org-item-title" id="org-item-5">Bunny Rescue Mexico</h4>
-          <p class="Organizationsp">
-            Bunny Rescue Mexico is an organization dedicated to rescuing and rehoming abandoned and neglected bunnies. They work tirelessly to provide medical care, socialization, and adoption services to bunnies in need, promoting a loving and caring community for rabbits.
-          </p>
+<div class="content" id="OrgsContent">
+  <br><br>
+  <!-- First organization -->
+  <div class="row">
+    <div class="col-md-10">
+      <a href='http://www.ibiologia.unam.mx/amcela/Objetivos.html' target="_blank" class="card-link"></a>
+      <div class="card bg-dark text-white card-rounded-rigth">
+        <div class="card-body rigth">
+          <h5 class="card-title">TEPORINGO AMCELA
+          </h5>
+          <div class="row">
+            <div class="col-md-7">
+              <p class="card-text left">The Mexican Association for the Conservation and Study of Lagomorphs A.C.
+                (AMCELA), is a civil association legally formed since August 21, 1990. It is made up of researchers,
+                professionals and students as well as people interested in the ecology and conservation of rabbits. and
+                Mexican hares</p>
+            </div>
+            <div class="col-md-5">
+              <img class="img mx-auto d-block" id="Amcela" src="{{ url_for('static', filename='img/Amcela.jpeg') }}">
+            </div>
+          </div>
+          <div class="row left">
+            <ul>
+              <li>Promote scientific research on Mexican rabbits and hares.</li>
+              <li>Promote the conservation of species that are in danger of extinction, as well as their habitat.</li>
+              <li>Carry out environmental education activities aimed at protecting the habitat of these species</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-      <br>
+
+  <br>
+
+  <!-- Second organization -->
+  <div class="row rowrigth">
+    <div class="col-md-10 offset-md-2">
+      <div class="card bg-dark text-white card-rounded-left">
+        <div class="card-body left">
+          <h5 class="card-title">CONANP</h5>
+          <div class="row">
+            <div class="col-md-3">
+              <img class="img mx-auto d-block" id="Conap" src="{{ url_for('static', filename='img/Conap.jpg') }}">
+            </div>
+            <div class="col-md-9">
+              <p class="card-text rigth">The National Commission of Protected Natural Areas (Conanp) contributes to the preservation and sustainability of ecosystems and natural environments, representative of the biological diversity of Mexico, through the planning, management and effective, equitable, honest and transparent administration of the Mexican system of Natural Areas Protected.</p>
+            </div>
+          </div>
+          <div class="row left">
+            <p class="card-text center">Contribute to the conservation of zacatuche in the wild, through identification and execution of conservation actions in habitat and populations. </p>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="row rowrigth">
+    <div class="col-md-10 offset-md-2">
+      <div class="card bg-dark text-white card-rounded-left">
+        <div class="card-body rigth">
+          <div class="row">
+            </div>
+              <ul>
+                <li>Reduce the factors that affect the habitat conditions and populations of the zacatuche rabbit through protection, surveillance and correct actions application of the legal framework.</li>
+                <li>Carry out management activities for the species and its habitat, to contribute to its recovery and conservation</li>
+                <li>Improve the habitat conditions of the zacatuche through the application of restoration strategies</li>
+                <li>Increase the participation of the various sectors of Mexican society in actions for the protection, management and recovery of the species and its habitat.</li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-md-10">
+      <div class="card white card-rounded-rigth">
+        <div class="card-body rigth">
+          <h5 class="card-title">House Rabbit Society (HRS) 
+          </h5>
+          <div class="row">
+            <div class="col-md-7">
+              <p class="card-text left">House Rabbit Society (HRS) is an international nonprofit animal welfare organization with two primary goals:</p>
+            </div>
+            <div class="col-md-5">
+              <img class="img mx-auto d-block" id="HouseRabbit" src="{{ url_for('static', filename='img/HouseRabbit.jpg') }}">
+            </div>
+          </div>
+          <div class="row left">
+            <ul>
+              <li>To rescue abandoned rabbits and find permanent homes for them es.</li>
+              <li>Through education,  seek to reduce the number of unwanted rabbits — and to improve bunnies lives — by helping people better understand these often misunderstood companion animals.</li>
+                      </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row rowrigth">
+    <div class="col-md-10 offset-md-2">
+      <div class="card white card-rounded-left">
+        <div class="card-body left">
+          <h5 class="card-title">Bunny C.A.R.E.</h5>
+          <div class="row">
+            <div class="col-md-3">
+              <img class="img mx-auto d-block" id="Care" src="{{ url_for('static', filename='img/Care.jpeg') }}">
+            </div>
+            <div class="col-md-9">
+              <p class="card-text rigth">Bunny C.A.R.E. It is a space created to encourage the adoption of rabbits, and raise awareness to avoid their purchase. This body seeks to be a support and guide for people in the pre- and post-adoption process, and thus achieve a definitive and comfortable home for them.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<br>
+</div>
+<br>
 {% endblock %}
